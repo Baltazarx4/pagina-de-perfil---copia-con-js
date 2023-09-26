@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/css.css">
+    <script src="script.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="encabezado">
+        <h1 class="titulo">Perfil</h1>
+        <ul class="paginas">
+            <li><a href="#">Home</a></li>
+            <li><a href="#" class="active">Mi perfil</a></li>
+            <li><a href="#">Conexiones</a></li>
+            <li><button class="btn">Cerrar sesión</button></li>
+        </ul>
+    </div>
+
+
+<div class="bloquesss">
+<div class="bloquesizquierda">
+    <div class="bloque1">
+        <div class="arriba">
+            <div><img class="foto" src="icons/usuario.png"></div>
+        </div>
+        <div class="cuerpo">
+            <div>
+                <h1 class="username">Baltazar Cifuentes</h1>
+            </div>
+
+            <div class="ciudad">
+                <img class="foto2"src="icons/map-marker.png">
+                Concepcion
+            </div>
+
+            <div class="habilidades">
+                Developer | Enginner | Problem Solver<br>
+                Master of sahdows and the Internet!
+            </div>
+
+
+            <div class="editar">
+                <img class="foto2" src="icons/gear.png">
+                <a id="editar" onclick="mostrarmodal(this)" href="#">editar perfil</a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="bloqueiz2">
+        <div class="cuadroarriba">
+            <p class="titulobloqueiz2">Educacion</p>
+        </div>
+        <div class="cuerpo">
+            <h3>Coding Dojo - Full Stack Bootcapm</h3>
+            Sep 2023- En 2024
+        </div>
+    </div>
+</div>
+
+
+<div class="bloquesderecha">
+        <div class="bloque2">
+            <div class="cuadroarriba">
+                <div id="contador1" class="circulo2"> 2 </div>
+                <p class="titulobloque2">Solicitud de Conexion</p>
+            </div>
+
+        <div class="cuerposolicitudes">
+            <div class="casillas">
+                <div class="perfil">
+                    <img id="imgg" class="peopleimg" src="images/todd-s.jpg">
+                    <span>Todd E</span>
+                </div>
+                <div class="aceptarrechazar">
+                    <img class="botonx" src="icons/accept-circle.png" onclick="move(this)">
+                    <img class="botonx" src="icons/close-circle.png" onclick="hide(this)">
+                </div>
+            </div>
+            <div class="casillas">
+                <div class="perfil">
+                    <img class="peopleimg" src="images/phil-s.jpg">
+                    <span>Phil K</span>
+                </div>
+                    <div class="aceptarrechazar">
+                        <img class="botonx"  src="icons/accept-circle.png" onclick="move(this)">
+                        <img class="botonx"  src="icons/close-circle.png" onclick="hide(this)">
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+
+
+
+
+
+
+<div class="bloque2">
+    <div class="cuadroarriba">
+        <div id="contador2" class="circulo2">4</div>
+        <p class="titulobloque2">Tus Conexiones</p>
+    </div>
+
+    <div class="cuerposolicitudes" id="misconexiones2">
+        <div class="casillas2">
+            <div class="perfil">
+                <img class="peopleimg" src="images/adrien-s.jpg">
+                Adrien D
+            </div>
+        <div class="casillas2">
+            <div class="perfil">
+                <img class="peopleimg" src="images/anne-s.jpg">
+                Anee J
+            </div>
+    </div>
+        <div class="casillas2">
+            <div class="perfil">
+                <img class="peopleimg" src="images/alayne-s.jpg">
+                Alayne T
+            </div>
+    </div>
+        <div class="casillas2">
+            <div class="perfil">
+                <img class="peopleimg" src="images/arry-s.jpg">
+                Arry Y
+            </div>
+        </div>
+</div>
+</div>
+<div class="vermas">
+    <a href="#">Ver mas</a>
+</div>
+</div>
+
+
+<div class="bloqueiz2 modal">
+    <div class="cuadroarriba">
+        <p class="titulobloqueiz2">Editar Perfil</p>
+    </div>
+    <div class="cuerpo">
+        <form onsubmit="cambiarnombre(event)">
+            <label for="nuevonombre">
+                Nuevo nombre de perfil:
+            </label>
+            <input id="nuevonombre">
+                <button class="btn2">Editar</button>
+            </imput>
+        </form>
+    </div>
+</div>
+</body>
+</html>
